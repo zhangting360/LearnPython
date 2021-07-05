@@ -70,3 +70,33 @@ array = list(range(100,120,2))
 print(array)
 del array #删除列表
 
+a = object()
+b = object()
+objects = [a,b,a,a,a]
+aCount = objects.count(a)
+print("count = ",aCount)
+print("index = ",objects.index(b))
+
+numbers = [11,2,53,41,52,16,27,78,189,110]
+sumTotal = sum(numbers)
+print(sumTotal)
+numbers.sort()
+print(numbers)
+numbers.sort(reverse=True)
+print(numbers)
+
+chars = ["world","hello","wow","Tom","Orrange","China"]
+chars.sort()
+print(chars)
+chars.sort(key=str.lower)
+print(chars)
+
+#列表推导式
+aaaa = []
+resultArray = [[aaaa.append(str(value)+"*"+str(value2)+"="+str(value*value2)) for value2 in range(value,10)] for value in range(1,10)]
+print("result = ",resultArray)
+for tempValue in resultArray:
+    print(tempValue)
+print('aaaa = ',aaaa)
+
+#元组
