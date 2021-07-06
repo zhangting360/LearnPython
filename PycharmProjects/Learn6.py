@@ -10,6 +10,8 @@
 '''
 
 #倒数计数
+import random
+
 array = ["美国","中国","法国","英国","德国","日本","韩国","澳大利亚","加拿大","俄罗斯"]
 print(array[-1])
 print(array[3])
@@ -100,3 +102,21 @@ for tempValue in resultArray:
 print('aaaa = ',aaaa)
 
 #元组
+tempTuple = ("Message",404)
+print('tuple = ',tempTuple)
+numberTuple = tuple(range(0,1000))
+print('numberTuple = ',numberTuple)
+del numberTuple
+
+#元组推导式 --- generator 生成器
+tupleNumber = (random.randint(0,100) for i in range(10))
+print(tupleNumber)
+for tmpNum in tupleNumber:
+    print("tmpNumber = ",tmpNum)
+
+#HomeWork
+array = [89,98,00,75,68,37,58,90]
+becomeArray = []
+for year in array:
+    becomeArray.append(year+1900)
+print("becomeArray = ",becomeArray)
