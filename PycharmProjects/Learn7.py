@@ -5,3 +5,9 @@
 # 开发工具:PyCharm
 
 #字符串
+string = "@收到货富士康.@."
+print(string.strip('@.收康士'))
+firstStr = string[0:2]
+lastStr = string[len(string)-3:len(string)]
+print(firstStr)
+print(lastStr)
